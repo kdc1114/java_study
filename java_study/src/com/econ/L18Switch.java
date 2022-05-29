@@ -6,7 +6,8 @@ import java.util.Scanner;
 class GradeApp{ // getter setter or Bean
 	private int score;
 	private String grade;
-	// 오버로드 : 이름은 똑같은데 매개변수가 달라서 다르게 호출되는 	      				    	              함수나 생성자를 의미 => 다형성(개발을 용이하게 하는)
+	/* 오버로딩 : 이름은 똑같은데 매개변수가 달라서 다르게 호출되는 
+	   함수나 생성자를 의미 => 다형성(개발을 용이하게 하는) */
 	// 자바스크립트는 오버로드가 불가능하다. (default 값이 대체한다.)
 	// constructor(score=10){}
 	public GradeApp() {};
@@ -39,11 +40,11 @@ class GradeApp{ // getter setter or Bean
 				this.grade="F";
 				break;
 		}
+		// score%10 의 조건을 이용해 +만들어보세요
 		// 88%10 -> 8 >= 5
 		if(score%10>=5) {
 			grade+="+";
 		}
-		// score%10 의 조건을 이용해 +만들어보세요
 	}
 	
 	public int getScore() {

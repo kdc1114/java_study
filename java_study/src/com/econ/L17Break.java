@@ -9,7 +9,7 @@ class StringParseInt {
 	}
 	public int forceParseInt() {
 		//this.c_num;
-		int pars_c = 0; // aa912 => 912 (9a19 => 191)
+		int pars_c = 0; // aa912 => 912 (9a19 => 919)
 		return pars_c;
 	}
 }
@@ -27,7 +27,15 @@ public class L17Break {
 		System.out.println(Integer.parseInt(s_num)+10);
 		
 		String nums = "16a7b5"; // => "1675"로 바꿔서 +10 연산을 하세요
-		
+		String str = "";
+		for(int i=0; i<nums.length(); i++) {
+			int num_c=nums.charAt(i);
+			if(num_c<48 || num_c >58) {
+				continue;
+			}
+			str+=nums.charAt(i);
+		}
+		System.out.println(Integer.parseInt(str)+10);
 		// 수로 형변환 가능한지 검사 후 변환 불가면 false를 반환
 		boolean num_check = true;
 		

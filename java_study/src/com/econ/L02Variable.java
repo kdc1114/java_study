@@ -6,7 +6,7 @@ public class L02Variable {
 // let s="안녕"; // let : 변수를 선언하겠다, s : 변수의 이름, "안녕" : 문자열 타입의 객체 (리터럴 선언법)
 		String s="안녕";
 // 자바의 문자열은 기본이 데이터 타입이 아니다.(기본 데이터 타입이 아닌 참조형은 대문자로 시작)
-//		System.out.println(s.charAt(0));
+		System.out.println(s.charAt(0));
 		System.out.println(s.length());
 // "안녕"을 선언하면 js는 "안녕" data만 순서대로 참조해서 기본데이터 타입으로 부를 수 있었지만
 // 자바에서의 "안녕"은 == new String("안녕")과 동일한 필드(속성,프로퍼티)를 갖는다("안녕"을 포함하는 많은 필드가 존재한다)

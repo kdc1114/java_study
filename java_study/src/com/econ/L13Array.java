@@ -1,7 +1,5 @@
 package com.econ;
 
-import java.util.Iterator;
-
 class Month{
 	int month; // 1,2,3,4~12
 	String en_month; // Jan,Feb ....
@@ -32,7 +30,7 @@ public class L13Array {
 		}
 		System.out.println("실행 좀 되어주세요");
 		
-		int  p_arr_total = 0;
+		int p_arr_total = 0;
 		for(int i=0; i<p_arr.length; i++) {
 			p_arr_total+=p_arr[i];
 		}
@@ -78,7 +76,7 @@ public class L13Array {
 			p_arr[i] = temp;
 		}
 		for(int i:p_arr) {
-			System.out.println(i + "");
+			System.out.println(i);
 		}
 		
 		String[] weeks=new String[7];

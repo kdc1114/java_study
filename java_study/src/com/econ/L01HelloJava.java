@@ -5,8 +5,6 @@ package com.econ;
 // 장점3 : 실제 소스코드가 배포되지 않기 때문에 보안이 강하다.
 // 단점 : 매번 컴파일을 하고 배포해하기 때문에 개발 속도가 조금 느리다.
 
-import java.io.StreamCorruptedException;
-
 // public class : 배포되는 class 문서를 발행한다는 의미 (java 문서와 동일한 이름을 사용해야한다)
 public class L01HelloJava {
 	// main() 약속된 함수 => public static void main (String[]args) -> 규칙 => 다른 main 함수 작성 금지

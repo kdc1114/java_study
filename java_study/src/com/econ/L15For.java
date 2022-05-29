@@ -13,7 +13,7 @@ public class L15For {
 				msg+=",";
 			}
 		}
-		System.out.println("a[]={"+msg+"}");
+		System.out.println("a[] = {"+msg+"}");
 		
 		int i=0; // 숫자 1부터 10까지의 합 == 55
 		int sum=0;
@@ -39,8 +39,8 @@ public class L15For {
 				total+=start_i;
 				start_i++;
 			}
-			System.out.println("입력한 범위의 합은 :"+total);
-			System.out.print("시스템 종료(y/n) :");
+			System.out.println("입력한 범위의 합은 : "+total);
+			System.out.print("시스템 종료(y/n) : ");
 			sc=new Scanner(System.in);
 			String exit=sc.nextLine();
 			if(exit.equals("y")) {

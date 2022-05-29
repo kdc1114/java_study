@@ -45,7 +45,7 @@ public class L16MultiArray {
 			System.out.println("");
 		}
 		System.out.println("");
-		for(int i=0; i<stars.length; i++) {
+		for(int i=stars.length-1; 0<=i; i--) {
 			for(int j=0; j<stars[i].length; j++) {
 				System.out.print(stars[i][j]+" ");
 			}

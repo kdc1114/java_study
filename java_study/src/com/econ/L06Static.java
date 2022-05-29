@@ -21,7 +21,7 @@ public class L06Static {
 		System.out.println(Car.WIDTH);
 		System.out.println(new Car().HEIGHT);
 		// static 필드는 new Car()의 객체가 아니다.
-		/* static 필드는 class 의 이름만 빌려온다. (static 메모리 영역, 정적 메모미라 부르는 곳에 저장됨)
+		/* static 필드는 class 의 이름만 빌려온다. (static 메모리 영역, 정적 메모리라 부르는 곳에 저장됨)
 		   jre 즉 main과 기본데이터타입이 저장되는 메모리*/
 		// 객체는 (동적 메모리 heap이라고 부르는 곳에 저장됨->가비지컬렉션에 의해 메모리가 자동정리되는 영역)
 		

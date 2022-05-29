@@ -28,6 +28,7 @@ public class L21Constructor {
 		Flower 수선화 =new Flower(6);
 		System.out.println(수선화.꽃잎);
 		Flower 수선화2 = new Flower(6,8,1);
+		System.out.println(수선화2.암술);
 		//생성자는 new로만 호출할 수 있다.
 	}
 }

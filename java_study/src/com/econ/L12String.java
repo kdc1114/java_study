@@ -36,7 +36,7 @@ public class L12String {
 		// t3_arr2[0]='A';
 		
 		// 자바의 기본형 byte short int long float double char(2byte) boolean
-		// 기본형 회의 모든 data는 참조형이다.
+		// 기본형 외에 모든 data는 참조형이다.
 		// 문자열은 왜 참조형일까??
 		// 1. 문자열은 인덱스를 참조하는 배열이기 때문
 		// 2. 자바스크립트는 문자열도 기본형인데? 왜 자바의 문자열은 참조형인가?

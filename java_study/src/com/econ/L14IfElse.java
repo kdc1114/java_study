@@ -42,9 +42,18 @@ public class L14IfElse {
 		// 2. 라이브러리를 사용할 때 if문 사용에 한계가 있을 때
 		
 		String a="123a4"; // 문자중에 숫자가 아닌 것이 있는지 검사해보세요.
+		boolean num_check=true;
+		for(int i=0; i<a.length(); i++) {
+			char num=a.charAt(i);
+			if(!(num >= 48 && num <= 58)) {
+				num_check=false;
+				System.out.println("문자중열에 숫자가아닌것이 있습니다.");
+				break;
+			}
+		}
 		System.out.println("해당문장은 정수입니다 : "+(stringIntTest(a)));
-		// "123123"=>정수 / 48<='3'<=59
-		// "123a123"=>정수 / 48<='3'<=59
+		// "123123"=>정수 / 48<='3'<=58
+		// "123a123"=>정수 / 48<='3'<=58
 		
 		// 콘솔에 입력한 문자를 입력받는 System.in
 		System.out.print("영어로 확인하고 싶은 달 입력 : ");
@@ -56,12 +65,12 @@ public class L14IfElse {
 		boolean int_check=true;
 		for(int i=0; i<month_input.length(); i++) {
 			char c=month_input.charAt(i);
-			if(!(c>=48 && c<=59)) {
+			if(!(c>=48 && c<=58)) {
 				int_check=false;
 				break;
 			}
 		}
-		System.out.println("입력한 문자는 정수로 형변환 가능:"+int_check);
+		System.out.println("입력한 문자는 정수로 형변환 가능 : "+int_check);
 //		if(int_check) {
 //			int month_parse=Integer.parseInt(month_input);
 //			if(month_parse>0 && month_parse<13) {
